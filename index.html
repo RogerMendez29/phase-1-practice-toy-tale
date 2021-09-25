@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <title>Toy Tale</title>
     <link rel="stylesheet" href="index.css" />
+    <script type="text/javascript" defer src="src/index.js"></script>
   </head>
   <body>
     <div id="toy-header">
@@ -18,6 +19,7 @@
         <h3>Create a toy!</h3>
 
         <input
+          id="name"
           type="text"
           name="name"
           value=""
@@ -26,6 +28,7 @@
         />
         <br />
         <input
+          id="image"
           type="text"
           name="image"
           value=""
@@ -33,19 +36,13 @@
           class="input-text"
         />
         <br />
-        <input
-          type="submit"
-          name="submit"
-          value="Create Toy"
-          class="submit"
-        />
+        <input type="submit" name="submit" value="Create Toy" class="submit" />
       </form>
     </div>
-    <p style="text-align:center">
+    <p style="text-align: center">
       Andy needs your help! <button id="new-toy-btn">Add a new toy!</button>
     </p>
 
     <div id="toy-collection"></div>
-    <script type="text/javascript" src="src/index.js"></script>
   </body>
 </html>
